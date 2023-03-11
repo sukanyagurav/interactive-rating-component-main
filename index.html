@@ -15,20 +15,22 @@
   <!-- Rating state start -->
   <main>
     <div class="card-container">
-    <div class="logo-container">
+      <!-- <div class="front-section active"> -->
+        <div class="logo-container">
       <img src="images/icon-star.svg" alt="">
-    </div>
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!</p>
-    
+        </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+       to help us improve our offering!</p>
       <form id="form">
+        <label  class="error">Please Select a rating!!</label>
         <div class="rating-container">
         <div class="rating">
           <input type="radio" name="rating" id="rating-1">
           <label for="rating-1">1</label>
         </div>
         <div class="rating">
+          
           <input type="radio" name="rating" id="rating-2">
           <label for="rating-2">2</label>
         </div>
@@ -46,8 +48,10 @@
         </div>
       </div>
       <button class="btn" id="btn">Submit</button>
+      
       </form>
     </div>
+
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
