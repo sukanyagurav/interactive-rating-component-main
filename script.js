@@ -2,8 +2,6 @@ const ratingContainer =document.querySelector('.rating-container');
 const cardContainer =document.querySelector('.card-container');
 const ratings = document.querySelectorAll('.rating');
 const error=document.querySelector('.error');
-// const frontSection =document.querySelector('.front-section')
-// const backSection =document.querySelector('.back-section')
 const form = document.getElementById('form');
 const btn = document.querySelector('#btn');
 let selectedRating;
@@ -33,10 +31,8 @@ function removeActiveRating(){
 btn.addEventListener('click',(e)=>{
     e.preventDefault()
     if(selectedRating){
-        // frontSection.classList.remove('active');
-        // backSection.classList.add('active');
-    //    const backSection=document.createElement('div');
-    //    backSection.className='back-section'
+        
+    const restore=cardContainer.innerHTML;
        cardContainer.innerHTML=`
        <div class="thanksContainer">
        <div class="thanksImg">
@@ -48,10 +44,11 @@ btn.addEventListener('click',(e)=>{
           <h2>Thank you!</h2>
           <p>We appreciate you taking the time to give a rating. If you ever need more support, 
             don’t hesitate to get in touch!</p>
+            
         </div>
         </div>
        `
-        // cardContainer.appendChild(backSection)
+    
     }
     else{
         error.classList.add('active')
