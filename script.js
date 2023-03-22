@@ -48,8 +48,10 @@ btn.addEventListener('click',(e)=>{
         </div>
         </div>
        `
-    
-    }
+       setTimeout(() => {
+        document.location.reload();
+      }, 6000);
+    }   
     else{
         error.classList.add('active')
     }
